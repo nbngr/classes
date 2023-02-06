@@ -1,0 +1,27 @@
+{
+    "name": "nbngr/classes",
+    "description": "The FTP class allows you to upload, download, move and mirror files with remote servers over the FTP protocol.",
+    "type": "library",
+    "keywords": [
+        "ftp",
+        "laravel ftp",
+        "connect ftp"
+    ],
+    "homepage": "https://github.com/nbngr/ftp",
+    "authors" : [{
+        "name": "Duc Nguyen",
+        "email": "ductuongquan1@gmail.com"
+    }],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {"Nbngr\\Classes\\": "src/"}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.5.x-dev"
+        }
+    }
+}
