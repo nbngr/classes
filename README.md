@@ -3,7 +3,7 @@ The FTP class allows you to upload, download, move and mirror files with remote 
 
 ## Install 
 composer require nbngr/classes
-php artisan vendor:publish --provider="Nbngr\Classes\FtpServiceProvider" --tag="classes-config"
+php artisan vendor:publish --provider="Nbngr\Classes\FtpServiceProvider" --tag=config
 ## Configuration
 
 ## Use
