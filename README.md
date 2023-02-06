@@ -1,5 +1,9 @@
 # ftp
 The FTP class allows you to upload, download, move and mirror files with remote servers over the FTP protocol.
+
+## Install 
+composer require nbngr/classes
+php artisan vendor:publish --provider="Nbngr\Classes\FtpServiceProvider" --tag="classes-config"
 ## Configuration
 
 ## Use
