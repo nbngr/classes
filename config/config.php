@@ -1,5 +1,5 @@
 <?php
-return array(
+return [
 
 
     /*
@@ -24,4 +24,4 @@ return array(
             'ssl_mode' => false,
         ],
     ],
-);
+];
