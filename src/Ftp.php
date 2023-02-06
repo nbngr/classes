@@ -33,6 +33,7 @@ class Ftp
 	protected $_passive   = true;
 	protected $_debug     = false;
 	protected $_conn_id   = false;
+	protected $_ssl_mode  = false;
 
 	/**
 	 * Returns a new Ftp object. If you do not define the "file" parameter,
@@ -60,11 +61,9 @@ class Ftp
 	 */
 	public function __construct($config = 'default')
 	{
-		\Config::load('ftp', true);
-
 		// If it is a string we're looking at a predefined config group
 		if (is_string($config)) {
-			$config_arr = \Config::get('ftp.' . $config);
+			$config_arr = \config('config.connections.' . $config);
 
 			// Check that it exists
 			if (!is_array($config_arr) or $config_arr === array()) {
